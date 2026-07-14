@@ -283,6 +283,20 @@ a{color:inherit;text-decoration:none}
 .sel-subnote:empty{display:none}
 .sel-note{font-size:12px;color:var(--gray-500);text-align:center;margin-top:14px;line-height:1.5}
 
+/* FORMAS DE PAGO */
+.pay-wrap{margin-top:56px}
+.pay-title{font-size:22px;color:var(--navy-3);margin-bottom:22px;letter-spacing:-0.01em}
+.pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.pay-grid{grid-template-columns:1fr}}
+.pay-card{position:relative;background:#fff;border:1.5px solid #E4E6F0;border-radius:20px;padding:30px 32px}
+.pay-card.featured{border-color:var(--purple);background:linear-gradient(135deg,#fbf8ff,#fff)}
+.pay-card h4{font-size:22px;color:var(--navy-3);margin-bottom:10px;letter-spacing:-0.01em}
+.pay-card p{font-size:14.5px;color:var(--gray-700);line-height:1.6}
+.pay-card p strong{color:var(--navy-3);font-weight:700}
+.pay-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#fff;background:linear-gradient(90deg,var(--blue),var(--purple));padding:5px 13px;border-radius:999px;margin-bottom:16px}
+.pay-opt{display:inline-block;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--purple);background:rgba(139,59,240,0.12);border:1px solid rgba(139,59,240,0.28);padding:5px 13px;border-radius:999px;margin-bottom:16px}
+.pay-foot{margin-top:20px;font-size:12.5px;color:var(--gray-500);line-height:1.5}
+
 /* PASOS */
 .pasos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));background:rgba(255,255,255,0.03);border-radius:20px;border:1px solid rgba(255,255,255,0.1);overflow:hidden;margin-top:8px}
 .paso{padding:30px;border-right:1px solid rgba(255,255,255,0.08)}
@@ -490,6 +504,7 @@ a{color:inherit;text-decoration:none}
           <span class="chip">Diferenciales</span>
         </div>
         <p class="etapa-out"><strong>Entregable:</strong> Plataforma de marca — el documento estratégico que define quién es Mundo TAP y por qué importa.</p>
+        <p class="etapa-out"><strong>Dedicación:</strong> 30 hs de estratega y analista de marketing.</p>
       </div>
     </div>
 
@@ -684,6 +699,24 @@ a{color:inherit;text-decoration:none}
         <button class="sel-cta" type="button" id="selCta">Avancemos con esto &rarr;</button>
         <p class="sel-note">Etapas 3 y 4 se cotizan más adelante, al definir su alcance. Propuesta válida hasta el 24 de julio de 2026.</p>
       </aside>
+    </div>
+
+    <!-- FORMAS DE PAGO -->
+    <div class="pay-wrap">
+      <h3 class="pay-title reveal">Formas de pago</h3>
+      <div class="pay-grid">
+        <div class="pay-card featured reveal">
+          <span class="pay-tag">Bonificación 3%</span>
+          <h4>100% anticipado</h4>
+          <p>Pago total por adelantado con una <strong>bonificación del 3%</strong> sobre el valor de las etapas contratadas.</p>
+        </div>
+        <div class="pay-card reveal delay-1">
+          <span class="pay-opt">Opción en dos pagos</span>
+          <h4>50% anticipo + 50% saldo</h4>
+          <p>Anticipo del <strong>50%</strong> para arrancar y el <strong>saldo a los 30 días</strong> o al finalizar el proyecto, lo que suceda primero.</p>
+        </div>
+      </div>
+      <p class="pay-foot reveal">Todos los valores se expresan en pesos + IVA. Etapas 3 y 4 se cotizan al definir su alcance.</p>
     </div>
   </div>
 </section>
